@@ -6,4 +6,4 @@ seller_id,
 shipping_limit_date,
 price,
 freight_value
-FROM raw.o_list_order_items_table
+FROM raw.order_items

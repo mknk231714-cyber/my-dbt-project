@@ -4,4 +4,4 @@ payment_sequential,
 payment_type,
 payment_installments,
 payment_value
-FROM raw.o_list_order_payments_table   
+FROM raw.order_payments  

@@ -7,4 +7,4 @@ SELECT
     order_delivered_carrier_date,
     order_delivered_customer_date,
     order_estimated_delivery_date
-FROM raw.o_list_orders_table
+FROM raw.orders

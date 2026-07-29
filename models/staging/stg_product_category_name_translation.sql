@@ -1,4 +1,4 @@
 SELECT
 product_category_name,
 product_category_name_english
-FROM raw.o_list_product_category_name_translation_table
+FROM raw. product_category_translation
