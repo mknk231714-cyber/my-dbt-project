@@ -1,0 +1,10 @@
+
+target/
+dbt_packages/
+logs/
+.env
+Olist dataset/
+*.csv
+__pycache__/
+*.pyc
+ .ipynb_checkpoints/
