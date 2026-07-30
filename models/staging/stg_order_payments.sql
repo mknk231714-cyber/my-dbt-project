@@ -4,4 +4,4 @@ payment_sequential,
 payment_type,
 payment_installments,
 payment_value
-FROM raw.order_payments  
+FROM {{sources('raw'.'order_payments')}}

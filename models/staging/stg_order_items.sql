@@ -6,4 +6,4 @@ seller_id,
 shipping_limit_date,
 price,
 freight_value
-FROM raw.order_items
+FROM {{sources('raw'.'order_items')}}

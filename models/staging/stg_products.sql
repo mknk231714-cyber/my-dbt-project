@@ -6,4 +6,4 @@ product_description_lenght,
 product_photos_qty,
 product_weight_g,
 product_length_cm
-FROM raw.products
+FROM {{sources('raw'.'products')}}

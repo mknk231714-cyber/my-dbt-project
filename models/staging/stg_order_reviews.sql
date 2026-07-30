@@ -6,4 +6,4 @@ review_comment_title,
 review_comment_message,
 review_creation_date,
 review_answer_timestamp
-FROM raw.order_reviews
+FROM {{sources('raw'.'order_reviews')}}
