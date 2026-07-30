@@ -11,4 +11,4 @@ SELECT
         WHEN order_delivered_carrier_date < order_approved_at THEN TRUE
         ELSE FALSE
     END AS carrier_date_before_approved_date_flag
-FROM {{sources('raw'.'orders')}}
+FROM {{source('raw','orders')}}

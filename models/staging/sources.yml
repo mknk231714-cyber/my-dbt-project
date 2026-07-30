@@ -10,5 +10,5 @@ sources:
       - name: order_payments
       - name: order_reviews
       - name: products
-      - name: product_category_name_translation
+      - name: product_category_translation
       - name: sellers
