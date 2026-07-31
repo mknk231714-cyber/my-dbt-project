@@ -2,13 +2,10 @@ SELECT
     order_id,
     customer_id,
     order_status,
-    order_purchase_timestamp,
-    order_approved_at,
-    order_delivered_carrier_date,
-    order_delivered_customer_date,
-    order_estimated_delivery_date,
-    CASE
-        WHEN order_delivered_carrier_date < order_approved_at THEN TRUE
-        ELSE FALSE
-    END AS carrier_date_before_approved_date_flag
+    order_purchase_timestamp as purchase_time,
+    order_approved_at as order_approval_time,
+    order_delivered_carrier_date as carrier_delivered_time,
+    order_delivered_customer_date as customer_delivered_time,
+    order_estimated_delivery_date as estimated_delivery_date
 FROM {{source('raw','orders')}}
+WHERE order_id IS NOT NULL
